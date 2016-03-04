@@ -32,8 +32,8 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="static/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="static/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a v-link="{ path: '/' }"><i class="fa fa-circle-o"></i> Home</a></li>
+            <li><a v-link="{ path: '/about' }"><i class="fa fa-circle-o"></i> About</a></li>
           </ul>
         </li>
         <li class="treeview active">
