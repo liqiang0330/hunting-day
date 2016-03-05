@@ -12,7 +12,8 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
-      'src': path.resolve(__dirname, '../src')
+      'src': path.resolve(__dirname, '../src'),
+      'jquery': 'jquery/dist/jquery'
     }
   },
   resolveLoader: {
@@ -23,23 +24,24 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'eslint',
-        exclude: /node_modules/
+        exclude: /(node_modules|static)/
       },
       {
         test: /\.js$/,
         loader: 'eslint',
-        exclude: /node_modules/
+        exclude: /(node_modules|static)/
       }
     ],
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue',
+        exclude: /static/
       },
       {
         test: /\.js$/,
         loader: 'babel',
-        exclude: /node_modules/
+        exclude: /(node_modules|static)/
       },
       {
         test: /\.json$/,
