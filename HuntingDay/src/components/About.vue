@@ -17,7 +17,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="callout callout-info">
-        <h1>{{ msg }}</h1>
+        <h1>/about</h1>
         <h4>Tip!</h4>
 
         <p>Add the fixed class to the body tag to get this layout. The fixed layout is your best option if your sidebar

@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
 import App from './App'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
+import Home from './components/Home'
+import About from './components/About'
+import Charts from './components/Charts'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -18,6 +19,10 @@ router.map({
   '/about': {
     name: 'about',
     component: About
+  },
+  'charts': {
+    name: 'charts',
+    component: Charts
   }
 })
 

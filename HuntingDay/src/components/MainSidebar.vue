@@ -55,6 +55,12 @@
             <small class="label pull-right bg-green">new</small>
           </a>
         </li>
+        <li>
+          <a v-link="{ path: '/charts' }">
+            <i class="fa fa-pie-chart"></i> <span>图表</span>            
+          </a>
+        </li>
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
