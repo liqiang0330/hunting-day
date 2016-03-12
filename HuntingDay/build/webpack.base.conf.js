@@ -2,7 +2,7 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/main.js'    
   },
   output: {
     path: path.resolve(__dirname, '../dist/static'),
@@ -19,7 +19,7 @@ module.exports = {
   resolveLoader: {
     root: path.join(__dirname, 'node_modules')
   },
-  module: {
+  module: {    
     preLoaders: [
       {
         test: /\.vue$/,
@@ -31,7 +31,7 @@ module.exports = {
         loader: 'eslint',
         exclude: /(node_modules|static)/
       }
-    ],
+    ],    
     loaders: [
       {
         test: /\.vue$/,
@@ -64,4 +64,18 @@ module.exports = {
   eslint: {
     formatter: require('eslint-friendly-formatter')
   }
+  /*   
+  externals: [
+    (function () {
+      var IGNORES = [
+        'electron'
+      ];
+      return function (context, request, callback) {
+        if (IGNORES.indexOf(request) >= 0) {
+          return callback(null, "require('" + request + "')");
+        }
+        return callback();
+      };
+    })()
+  ]*/
 }

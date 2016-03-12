@@ -3,6 +3,7 @@ var config = require('./webpack.base.conf')
 var cssLoaders = require('./css-loaders')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var webpackTargetElectronRenderer = require('webpack-target-electron-renderer')
 
 // naming output files with hashes for better caching.
 // dist/index.html will be auto-generated with correct URLs.
@@ -55,5 +56,7 @@ config.plugins = (config.plugins || []).concat([
     }
   })
 ])
+
+config.target = webpackTargetElectronRenderer(config)
 
 module.exports = config

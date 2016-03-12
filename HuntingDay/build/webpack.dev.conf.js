@@ -2,6 +2,7 @@ var webpack = require('webpack')
 var config = require('./webpack.base.conf')
 var cssLoaders = require('./css-loaders')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var webpackTargetElectronRenderer = require('webpack-target-electron-renderer')
 
 // eval-source-map is faster for development
 config.devtool = 'eval-source-map'
@@ -45,5 +46,7 @@ config.plugins = (config.plugins || []).concat([
     inject: true
   })
 ])
+
+config.target = webpackTargetElectronRenderer(config)
 
 module.exports = config
