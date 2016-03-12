@@ -1,5 +1,5 @@
 <template>
-  <header class="main-header">
+  <header class="main-header" style="-webkit-app-region: drag; -webkit-user-select: none;">
     <!-- Logo -->
     <a href="static/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -146,6 +146,10 @@
           <!-- Control Sidebar Toggle Button -->
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+          <li>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
           </li>
         </ul>
       </div>

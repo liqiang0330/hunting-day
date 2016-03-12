@@ -9,8 +9,11 @@
     <c-main-sidebar></c-main-sidebar>
 
     <!-- =============================================== -->
-
-    <router-view></router-view>
+    <div class="content-wrapper">
+      <div class="slimScrollDiv1">
+        <router-view></router-view>
+      </div>
+    </div>
 
     <c-footer></c-footer>
 
@@ -32,6 +35,15 @@ export default {
     CMainSidebar,
     CFooter,
     CControlSidebar
+  },
+  ready () {
+    var $ = window.$ = window.jQuery = require('jquery')
+    $(window)
+    require('../static/bootstrap/js/bootstrap.min.js')
+    require('../static/plugins/slimScroll/jquery.slimscroll.min.js')
+    require('../static/plugins/fastclick/fastclick.js')
+    require('../static/dist/js/app.js')
+    require('../static/dist/js/demo.js')
   }
 }
 </script>

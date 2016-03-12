@@ -1,7 +1,4 @@
-<template>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<template>  
     <section class="content-header">
       <h1>
         ChartJS
@@ -104,9 +101,7 @@
       </div>
       <!-- /.row -->
 
-    </section>
-    <!-- /.content -->
-  </div>
+    </section>    
 </template>
 
 <script>

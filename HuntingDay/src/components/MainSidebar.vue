@@ -10,7 +10,7 @@
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online 11111111111</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online </a>
         </div>
       </div>
       <!-- search form -->

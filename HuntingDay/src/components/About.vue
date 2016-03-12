@@ -1,7 +1,4 @@
-<template>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<template>  
     <section class="content-header">
       <h1>
         Fixed Layout
@@ -46,10 +43,7 @@
       </div>
       <!-- /.box -->
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->  
+    </section>    
 </template>
 
 <script>
